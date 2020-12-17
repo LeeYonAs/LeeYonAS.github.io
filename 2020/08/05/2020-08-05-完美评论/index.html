@@ -1,0 +1,475 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="admin">
+  <meta name="keywords" content="">
+  <title>完美评论 - Hexo</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.6","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"copy_btn":true,"image_zoom":{"enable":true},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Lilys</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                主页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                类别
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="完美评论">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2020-08-05 18:30" pubdate>
+        August 5, 2020 pm
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.9k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      24
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">完美评论</h1>
+            
+            <div class="markdown-body">
+              <p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1596633980133&di=e10018250d84fcdcc59391eb68c8fbba&imgtype=0&src=http://wx4.sinaimg.cn/bmiddle/9e31678cgy1fdgwt8m1fyj20k00k040h.jpg" srcset="/img/loading.gif" alt="请输入图片描述"></p>
+<ul>
+<li>有幸欣赏了这张作品，清晰锐利。角度适中，位置和色彩很到位，曝光完美，拍摄手法精准，堪称现代拍客之经典巨作，可谓是美不胜收，达到了我等瞻仰，狂热追星高度。就艺术的角度而言，它展现的意义却远远大于照片本身，真不愧为具有专业水准的拍摄大师，这样的高度我们遥不可及。痴痴地看完你的这张后，我的心久久不能平静，这世间怎么可能还会有如此照片，它诠释了在外游子寂寞空虚冷的完美意境。  </li>
+</ul>
+<hr>
+<ul>
+<li>精准的曝光，千载难逢的画面捕捉，毋庸置疑的黄金构图，极具空气感的画面，高光亮而不溢，暗部黑而不死。过度锐而不硬，画质润而不腻。焦内如刀割般犀利，焦外如奶油般化开。色彩清新脱俗，构图别出心裁，雅俗共赏。主体清晰通透，动态多样，抓拍到位，表情自然，活泼靓丽。深邃的思想，惊世的影调，无与伦比的后期。充满了人文的气息，接地气的大片，作品给人以美的感受，欣赏学习，大神的佳作。有高度，有深度！毒，德味，大片，学习了!</li>
+</ul>
+<hr>
+<ul>
+<li>非杠非黑，[doge原谅ta]狗头保命，纯属闲话，并无敌意，仅表达字面含义无讽刺、暗示意味，仅代表个人观点并无意引战，语言不当之处请见谅，本人尊重黑女穆同等一切团体，若本回复冒犯到您我诚挚表示歉意，若您不赞同我的观点不必特地告诉我。</li>
+</ul>
+<hr>
+<ul>
+<li>机子啥时候买的？是原价买的吗？买的时候是是和官网售价一样吗？在哪买的？是自用的吗？最重要的是能刀吗？大刀小刀指甲刀？能刀多少？什么配置？行货还是水货？有没有暗病？为什么要卖？电池能用几天？有数据线耳机充电器吗？都是原装的吗？没坏吧？冲电要多久呢？带内存卡吗？多大的？哪个牌子的？有没有暗病？拆过吗？修过吗？进水过吗？还有保吗？有发票吗？箱说还在吗？三码合一吗？黑色吗？有白色吗？美版吗？有港行吗？可以用手写笔吗？防水吗？有皮套吗？皮套是人造革还是真皮的呢？皮套是白色还是黑色呢？有保护壳吗？有说明书吗？介绍的详细不详细呢？能不能看懂呢？说明书有多少页呢？是彩色的还是黑白的呢？上面有没有图示还是都是文字呢？屏幕是否贴膜呢？自己贴的还是花钱贴的呢？贴的多少钱呢？膜是磨砂的还是普通的呢？膜是硬的还是软的呢？屏幕有没有进灰呢？按键有没有掉漆呢？掉漆严重不严重呢？你的手机一直是自己用的吗？你的手机买的是新的还是二手的呢？不是你自用的那你买他的是新的还是二手的呢？你用了多久了？成色咋样？有掉漆吗？有划痕吗？是原装壳吗？螺丝花了吗？屏幕进灰了吗？能拿的出手吗？刷的是什么系统？刷过几次机？系统稳定吗？会死机吗？有没有过重启？联通卡能用吗？信号稳定吗？接打清晰吗？有没有杂音？上网掉线吗？手机辐射大吗？你要怎么交易？包邮吗？哪个快递？几天能到？可以试用几天？可以拆机看板吗？发现问题了咋办？不满意可以退吗？最后问一句,不买可以问问吗?</li>
+</ul>
+<hr>
+<ul>
+<li>复出这种事情见得多了，其实也就见怪不怪了，我只想说懂得都懂，不懂的我也不多解释，毕竟自己知道就好，细细品吧。你也别来问我怎么了，这里面利益牵扯太大，说了对你我都没好处，当不知道就行了，其余的我只能说这里面水很深，牵扯到的很多东西都是咱们这些人都搞不明白的。详细情况想自己找的话是很难找的，网上大部分已经删除干净了，所以我只能说懂得都懂。像我们这些懂的人已经基本都获利上岸什么的了，不懂的人永远不懂，关键懂的人都是自己悟的，你也不知道谁是懂的人也没法请教，大家即使知道了大多数也都藏着掖着生怕别人知道自己懂事，懂了就能收割不懂的，你甚至都不知道自己不懂。只是在有些时候，某些人喜欢对某些事情不懂装懂，还以为别人不懂。其实自己才是不懂的，别人懂的够多了，不仅懂，还懂的超越了这个范围，但是某些不懂的人让这个懂的人完全教不懂，所以不懂的人永远不懂，只能不懂装懂，别人说懂的都懂，只要点点头就行了，懂了吗？</li>
+</ul>
+<hr>
+<ul>
+<li>高考又要来了！</li>
+</ul>
+<p>【琼瑶版】</p>
+<p>老师，我一直在晕耶！进了考场，我晕，见了监考老师，我还晕，拿到试卷，我更晕了。我真的觉得我好无用，好无能，好脆弱，好对不起大家……</p>
+<p>【甄嬛版】<br>小主今日考试倍感乏力，恐是昨夜梦魇扰了心神，都是最近琐事众多烦闷了些，加上早起后，背了点单词，不想那单词难背极了，愈加心烦。若能取消高考，那必是极好的！</p>
+<p>【鲁迅版】<br>桌上有两张纸，一张是试卷，另一张也是试卷。初夏已经颇热，脊背上却一层又一层冷汗。题目照例是不会做了，先生的讲义上全然没有见过。责任似乎并不在我，譬如使惯了刀的，这回要我耍棍，能行么？</p>
+<p>【仓央嘉错版】<br>做与不做，题目都在那里，不多不少；会与不会，题目都在那里，不难不易。让我的眼走进你的试卷里，或者你把小抄递进我的手心里。默然，焦虑，寂静，哭泣。</p>
+<p>【赵忠祥版】<br>答题卡上白茫茫一片，像冰雪笼罩着的阿拉斯加。绝望之中，我只好紧紧闭上眼睛，像一头***的海豹，坠入无边的冰冷与黑暗。</p>
+<p>【最炫民族风版】<br>静静的考场是我的爱，张张的试卷慢慢打开。什么样的题型是最呀最无奈，什么样的题型它是最开怀。</p>
+<p>【朱自清版】<br>这几天心里颇不宁静，看着试卷上日日见过的题目，像牛毛，像花针，像细丝，密密的斜织着，却无从做起。于是忆起《长歌行》里的句子：少壮不努力，老大徒伤悲……这样想着，猛一抬头，却见监考老师在讲台上迷迷糊糊，快要睡着了。</p>
+<p>【金庸版】<br>尽管试卷题目古怪，而答题者的手法更是匪夷所思，闻所未闻。只见个个学子笔锋在空横书斜钓，似乎入境一般，笔锋所指，处处是大题难题。</p>
+<p>【古龙版】<br>江湖中令人头疼的高考，据说也有人不头疼，但不头疼的人只有一种人，那就是死人。所以至今提起高考，没有一个不头疼的。一间教室，三十考生，六盏灯，人就这样坐着，均匀的呼吸，凝固的空气……</p>
+<p><strong>未完待续 长期更新</strong></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</a>
+                    
+                      <a class="hover-with-bg" href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/%E8%AF%B4%E8%AF%B4/">说说</a>
+                    
+                  </div>
+                
+                
+              </div>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2020/08/06/2020-08-06-%E7%8E%AF%E5%A2%9E%E7%9B%8A/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">环增益</span>
+                        <span class="visible-mobile">Previous</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/08/04/2020-08-04-%E5%A6%82%E6%9E%9C%E5%8F%A4%E8%AF%97%E6%96%87%E8%AE%A9%E6%A0%87%E9%A2%98%E5%85%9A%E6%9D%A5%E5%86%99,%E4%BC%9A%E6%98%AF%E4%BB%80%E4%B9%88%E6%A0%B7%E7%9A%84%E4%BD%93%E9%AA%8C/">
+                        <span class="hidden-mobile">如果古诗文让标题党来写,会是什么样的体验</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;TOC</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> & Lilys & <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":200})
+    NProgress.start()
+    document.addEventListener('DOMContentLoaded', function() {
+      window.NProgress && window.NProgress.inc();
+    })
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      var inputArea = document.querySelector("#local-search-input");
+      inputArea.onclick = function () {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+        this.onclick = null
+      }
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+
+</body>
+</html>

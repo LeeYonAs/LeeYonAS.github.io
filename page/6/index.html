@@ -1,0 +1,789 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  <title>Hexo</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.6","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"copy_btn":true,"image_zoom":{"enable":true},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+
+<body>
+  <header style="height: 100vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Lilys</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                主页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                类别
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('https://acg.xydwz.cn/gqapi/gqapi.php') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="Welcome 欢迎访问">
+              
+            </span>
+
+            
+          </div>
+
+          
+            <div class="scroll-down-bar">
+              <i class="iconfont icon-arrowdown"></i>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-md">
+        <div class="py-5" id="board"
+          style=margin-top:0>
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/08/16/2020-08-16-%E6%8A%96%E9%9F%B3%E5%8F%AF%E4%BB%A5%E8%B5%9A%E9%92%B1%E5%90%97%EF%BC%9F/">抖音可以赚钱吗？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/08/16/2020-08-16-%E6%8A%96%E9%9F%B3%E5%8F%AF%E4%BB%A5%E8%B5%9A%E9%92%B1%E5%90%97%EF%BC%9F/">
+          
+          
+            
+          
+          今天下载注册了，抖音 抖音火山版 快手之前只看过抖音
+
+第一种赚钱方式应该就是发视频 然后各个平台根据视频的播放情况 会给出一定的奖赏我发了几个视频只有抖音火山版有收益
+
+另一种就是通过其他平台来获取关注点赞的任务 通过任务后来换取积分进而兑换成现金帮别人加关注点赞获取积分 10000积分兑换1元虽说有自动脚本但还是得人看着 积少成多但我做不到 太麻烦了
+
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-08-16 20:35" pubdate>
+              2020-08-16
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</a>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/%E8%AF%B4%E8%AF%B4/">说说</a>
+            
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/08/15/2020-08-15-%E4%BD%A0%E7%9F%A5%E9%81%938.15%E6%98%AF%E4%BB%80%E4%B9%88%E6%97%A5%E5%AD%90%E5%90%97%EF%BC%9F/">你知道8.15是什么日子吗？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/08/15/2020-08-15-%E4%BD%A0%E7%9F%A5%E9%81%938.15%E6%98%AF%E4%BB%80%E4%B9%88%E6%97%A5%E5%AD%90%E5%90%97%EF%BC%9F/">
+          
+          
+            
+          
+          1945年8月15日，日本宣布无条件投降。今年是中国人民抗日战争暨世界反法西斯战争胜利75周年。
+![rbtx.jpg][1]  [1]: https://cdn.jsdelivr.net/gh/LeeYonAs/logli/usr/uploads/2020/08/1949475710.jpg
+
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-08-15 18:18" pubdate>
+              2020-08-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</a>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/%E4%BB%8A%E6%97%A5%E7%83%AD%E7%82%B9/">今日热点</a>
+            
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/08/15/2020-08-15-CDN_%E5%8A%A0%E9%80%9F/">CDN 加速</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/08/15/2020-08-15-CDN_%E5%8A%A0%E9%80%9F/">
+          
+          
+            
+          
+          因为.ml这个免费的域名没有备案无法用又拍云的CDN进行加速，后来在网上找到了Nodecache，免费1TB的北美和亚太地区 100GB的中国直连 效果比Cloudflare（这个对大陆来说就是减速）注册 登录 按照提示要求填写 要注意 线路配置下的源站地址 DNS解析是一个@一个www
+
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-08-15 11:16" pubdate>
+              2020-08-15
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</a>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/%E6%95%99%E7%A8%8B/">教程</a>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/%E6%95%99%E7%A8%8B/%E6%8E%A8%E8%8D%90/">推荐</a>
+            
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/08/14/2020-08-14-%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8FFRP/">内网穿透FRP</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/08/14/2020-08-14-%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8FFRP/">
+          
+          
+            
+          
+          GB隔壁老英B站UP主ioiox  多平台教程樱花FRP 签到送流量1~4GB/天提供多种内网穿透我不会配置这个 没成功Github说明例如通过密码保护你的web服务，自定义二级域名手机端下载
+
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-08-14 20:33" pubdate>
+              2020-08-14
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</a>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/%E6%95%99%E7%A8%8B/">教程</a>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/%E6%95%99%E7%A8%8B/%E6%8E%A8%E8%8D%90/">推荐</a>
+            
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/08/13/2020-08-13-%E6%8B%8D%E4%B8%AA%E6%98%9F%E6%98%9F/">拍个星星</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/08/13/2020-08-13-%E6%8B%8D%E4%B8%AA%E6%98%9F%E6%98%9F/">
+          
+          
+            
+          
+          拍了一个多小时 拍得都不是很好
+
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-08-13 23:48" pubdate>
+              2020-08-13
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</a>
+            
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/08/12/2020-08-12-%E6%88%91%E7%9A%84%E6%89%8B%E6%9C%BA/">我的手机</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/08/12/2020-08-12-%E6%88%91%E7%9A%84%E6%89%8B%E6%9C%BA/">
+          
+          
+            
+          
+          七月底换了屏幕，这是我换的第二块屏幕了，第一块是原装，这次不是，便宜了不少。然后昨天下午买的电池到了，换上电池，测了容量，用胶水把屏幕 后盖都合上，再用酒精擦一擦，和新的一样。但这个电池发热特别大，然而到了晚上手机屏幕有一点乱触，后来有一块区域就不可以触碰了。一夜之后还是这样，拆开之后却花屏了，又坏了一个屏幕……现在只能靠连接电脑用QtScrcpy控制，再安装一个BubbleUPnP可以用DLAN
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-08-12 17:38" pubdate>
+              2020-08-12
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</a>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/%E8%AF%B4%E8%AF%B4/">说说</a>
+            
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/08/12/2020-08-12-%E4%BA%9101/">云01</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/08/12/2020-08-12-%E4%BA%9101/">
+          
+          
+            
+          
+          昨天晚上受到台风的影响 天黄之后就是一场暴雨 不过一个多小时就停了[dplayer url=”https://cdn.jsdelivr.net/gh/LeeYonAs/logli/usr/uploads/2020/08/1284012377.mp4&quot; pic=”https://cdn.jsdelivr.net/gh/LeeYonAs/logli/usr/uploads/2020/08/2
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-08-12 17:19" pubdate>
+              2020-08-12
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</a>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/%E5%A4%A9%E6%B0%94/">天气</a>
+            
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/08/11/2020-08-11-%E7%94%A8adb%E5%8D%B8%E8%BD%BD%E5%AE%89%E5%8D%93%E7%9A%84%E5%BA%94%E7%94%A8/">用adb卸载安卓的应用</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/08/11/2020-08-11-%E7%94%A8adb%E5%8D%B8%E8%BD%BD%E5%AE%89%E5%8D%93%E7%9A%84%E5%BA%94%E7%94%A8/">
+          
+          
+            
+          
+          老手机变慢可以用abd卸载一些系统应用如果你的手机是华为 可以下载一键卸载的bat执行文件但有的还是卸载不掉可以用下面的方法
+
+手机与电脑通过数据线保持连接，安装好adb
+在终端cmd输入adb device命令连接手机
+输入adb shell进入安卓系统的shell
+输入pm list packages列出系统安装的包
+输入pm uninstall –user 0 包名进行卸载
+输出Succes
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-08-11 17:00" pubdate>
+              2020-08-11
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</a>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/%E6%95%99%E7%A8%8B/">教程</a>
+            
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/08/10/2020-08-10-%E7%BD%91%E7%AB%99%E8%BD%AC%E7%A7%BB/">网站转移</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/08/10/2020-08-10-%E7%BD%91%E7%AB%99%E8%BD%AC%E7%A7%BB/">
+          
+          
+            
+          
+          窗台-李健.mp3之前搭建的logli.epizy.com二级域名网站 误删了数据库 不过还好文章还在 那个数据库不太好管理 服务器又是在英国 有点慢于是又搭建了一个 也是免费的速度一般 数据库好备份 服务器在香港  延时比之前的好 整体还行图片等附件托管在GitHub上 加速后也挺快的弄这个博客有十天了 大体上会使用了 不过也只是按着别人教程来 但想弄一个自己特色的还是比较难 最难的还是CDN加
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-08-10 23:59" pubdate>
+              2020-08-10
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</a>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/%E8%AF%B4%E8%AF%B4/">说说</a>
+            
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/08/09/2020-08-09-%E7%B2%BE%E9%80%89%E4%B9%A6%E7%AD%BE/">精选书签</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/08/09/2020-08-09-%E7%B2%BE%E9%80%89%E4%B9%A6%E7%AD%BE/">
+          
+          
+            
+          
+          一些好用的网站 我会持续更新 也请大家评论添加1080影视蛋蛋赞影院空投传文件鸠摩搜书AI智能放大图片pdf转换pdf福昕云编辑下载音乐
+
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-08-09 17:03" pubdate>
+              2020-08-09
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</a>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/%E6%8E%A8%E8%8D%90/">推荐</a>
+            
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/page/5/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/7/"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+  
+  <script>
+    for (ele of document.getElementById("pagination").getElementsByTagName("a")) {
+      ele.href += '#board';
+    }
+  </script>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> & Lilys & <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":200})
+    NProgress.start()
+    document.addEventListener('DOMContentLoaded', function() {
+      window.NProgress && window.NProgress.inc();
+    })
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      var inputArea = document.querySelector("#local-search-input");
+      inputArea.onclick = function () {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+        this.onclick = null
+      }
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+
+</body>
+</html>

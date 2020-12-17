@@ -1,0 +1,782 @@
+
+
+<!DOCTYPE html>
+<html lang="en" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  <title>Hexo</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.6","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"copy_btn":true,"image_zoom":{"enable":true},"lazyload":{"enable":true,"onlypost":false},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+
+<body>
+  <header style="height: 100vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Lilys</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                主页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                类别
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('https://acg.xydwz.cn/gqapi/gqapi.php') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="Welcome 欢迎访问">
+              
+            </span>
+
+            
+          </div>
+
+          
+            <div class="scroll-down-bar">
+              <i class="iconfont icon-arrowdown"></i>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      <div class="container nopadding-md">
+        <div class="py-5" id="board"
+          style=margin-top:0>
+          
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10 m-auto">
+                
+
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/08/26/2020-08-26-dogeland%E6%80%8E%E4%B9%88%E7%94%A8%EF%BC%9F/">dogeland怎么用？</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/08/26/2020-08-26-dogeland%E6%80%8E%E4%B9%88%E7%94%A8%EF%BC%9F/">
+          
+          
+            
+          
+          想把旧手机变成一个服务器Ubuntu或者是Centos也没啥目的 就是想试一下LinuxDeploy这个倒是可以 但需要Root然后再Github上发现了这个dogeland挺新的 现在star才13个人弄了一会没弄成功 装不上镜像 VNC和SSH都无法连接又试了试Termux安装总是报错我也看不懂马上就开学了 没空弄了现在也没有什么关于这个dogeland的教程等明年再试试吧不知道你们会不会，留
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-08-26 23:03" pubdate>
+              2020-08-26
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</a>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/%E6%8E%A8%E8%8D%90/">推荐</a>
+            
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/08/25/2020-08-25-%E4%BB%8A%E5%A4%A9%E5%87%BA%E4%BC%8F%E5%95%A6/">今天出伏啦</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/08/25/2020-08-25-%E4%BB%8A%E5%A4%A9%E5%87%BA%E4%BC%8F%E5%95%A6/">
+          
+          
+            
+          
+          今天三伏天结束了从7月16日到8月24日，40天的加长版炎炎暑气逐渐要散去，正逢七夕不妨体会一下“天阶月色凉如水，卧看牵牛织女星”出伏后，白天热，早晚凉，气候趋于干燥秋天很快就要来了
+
+长沙路口红灯变成心形
+
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-08-25 09:58" pubdate>
+              2020-08-25
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</a>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/%E5%A4%A9%E6%B0%94/">天气</a>
+            
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/08/24/2020-08-24-%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%B7%91%E6%AD%A5/">第一次跑步</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/08/24/2020-08-24-%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%B7%91%E6%AD%A5/">
+          
+          
+            
+          
+          ![473187624.jpg][1]放假这么久久久第一次出去跑步没跑几步就觉得心疼然后走了有二十分钟就来家了
+
+
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-08-24 23:03" pubdate>
+              2020-08-24
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</a>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/%E8%AF%B4%E8%AF%B4/">说说</a>
+            
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/08/23/2020-08-23-%E5%9B%9E%E5%AE%B6%E5%90%83%E9%A5%AD/">回家吃饭</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/08/23/2020-08-23-%E5%9B%9E%E5%AE%B6%E5%90%83%E9%A5%AD/">
+          
+          
+            
+          
+          今天一大早就回家了————准备吃饭也没吃啥还是上个月25号回家的 八月一直在家里 除了拿过几次快递 小区也没出过↑↑↑屋后的稻田↑↑↑[dplayer url=”https://service-h1loohs5-1302898725.sh.apigw.tencentcs.com/release/oneindex/blog/IMG_1645.mp4&quot; pic=”” /]
+
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-08-23 21:42" pubdate>
+              2020-08-23
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</a>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/%E8%AF%B4%E8%AF%B4/">说说</a>
+            
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/08/22/2020-08-22-%E5%A4%84%E6%9A%91/">处暑</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/08/22/2020-08-22-%E5%A4%84%E6%9A%91/">
+          
+          
+            
+          
+          今日处暑秋意冉冉，秋高气爽的时节到了。处暑是二十四节气中第十四个节气，炎热渐消，暑气至此而止。前天晚上有许多电闪但没有雷鸣 风很大，坐在窗户边非常非常凉快昨晚电闪雷鸣可以说是雷电交加一刻不停 持续了有两三个小时 后来下了一阵雨
+
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-08-22 19:01" pubdate>
+              2020-08-22
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</a>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/%E5%A4%A9%E6%B0%94/">天气</a>
+            
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/08/21/2020-08-21-FC%E6%B8%B8%E6%88%8F/">FC游戏</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/08/21/2020-08-21-FC%E6%B8%B8%E6%88%8F/">
+          
+          
+            
+          
+          任天堂红白机FC（Family Computer）如《魂斗罗系列》、《沙罗曼蛇系列》、《超级玛丽》、《赤色要塞》、《双截龙》、《坦克大战》、《松鼠大作战》、《快打旋风》等一系列经典游戏PC模拟器推荐VirtuaNES安卓版推荐Nesoid游戏文件格式为NES可在FC游戏网下载后载入到正确的路径就可以愉快的玩耍了PC版可以用金手指修改内存数据达到无敌的效果
+
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-08-21 19:24" pubdate>
+              2020-08-21
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</a>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/%E6%8E%A8%E8%8D%90/">推荐</a>
+            
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/08/20/2020-08-20-%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%A1%8C%E4%BA%8C%E5%8D%81%E5%A4%A9%E4%BA%86/">博客运行二十天了</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/08/20/2020-08-20-%E5%8D%9A%E5%AE%A2%E8%BF%90%E8%A1%8C%E4%BA%8C%E5%8D%81%E5%A4%A9%E4%BA%86/">
+          
+          
+            
+          
+          其实这个博客才运行十天，另外的十天数据是另一博客导入来的，那个博客也挺好，就是域名太长了，数据库不好整理，主要是那个一大部分东西被删了，只剩下博文了，所以转移到了这个博客。博客域名是在Freenom申请的 免费一年虚拟服务器是在载墨云申请的 一个个人非营利性网站容器提供平台 永久免费程序源码是由Typecho提供 轻量高效 先进稳定 简洁友好CDN和DNS解析是由Nodecache提供 加快大陆访
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-08-20 19:23" pubdate>
+              2020-08-20
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</a>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/%E8%AF%B4%E8%AF%B4/">说说</a>
+            
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/08/19/2020-08-19-%E4%BB%8A%E6%97%A5%E7%83%AD%E7%82%B920200819/">今日热点20200819</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/08/19/2020-08-19-%E4%BB%8A%E6%97%A5%E7%83%AD%E7%82%B920200819/">
+          
+          
+            
+          
+          2020年中国医师节 今天是中国第三个医师节，白衣执甲，奋战一线，护百姓健康，换山河无恙！ 医生不是超人，却一生用仁心点亮生命，致敬所有医务工作者！ ​​​​
+
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-08-19 17:13" pubdate>
+              2020-08-19
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</a>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/%E4%BB%8A%E6%97%A5%E7%83%AD%E7%82%B9/">今日热点</a>
+            
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/08/18/2020-08-18-%E6%94%BE%E5%BC%83%E6%97%A7%E6%89%8B%E6%9C%BA/">放弃旧手机</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/08/18/2020-08-18-%E6%94%BE%E5%BC%83%E6%97%A7%E6%89%8B%E6%9C%BA/">
+          
+          
+            
+          
+          手机没有屏幕了，用电脑操控不是很方便，还是想买一块屏幕，在网上又找了一家，下单了，说是明天发货。让后晚上发现手机应该彻底坏了，不仅仅是屏幕的问题，主板可能也坏了。具体现象就是有一段区域不可触碰，或者触摸发飘，不能像正常那样顺滑，画不出圆来，如下图下半部分然后退货了彻底放弃修这个手机了手机过年的时候就有问题了，只是外屏碎了，偶尔触摸不灵，勉强能用可能是手机坏了的原因吧，对手机的依赖越来越小打王者的话
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-08-18 20:45" pubdate>
+              2020-08-18
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</a>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/%E8%AF%B4%E8%AF%B4/">说说</a>
+            
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h1 class="index-header">
+        
+        <a href="/2020/08/17/2020-08-17-%E4%BB%8A%E6%97%A5%E7%83%AD%E7%82%B920200817/">今日热点20200817</a>
+      </h1>
+
+      <p class="index-excerpt">
+        <a href="/2020/08/17/2020-08-17-%E4%BB%8A%E6%97%A5%E7%83%AD%E7%82%B920200817/">
+          
+          
+            
+          
+          微信朋友圈可以删评论了
+iOS版微信更新到最新7.0.15版本后，可以删除朋友圈评论了。如果评论你的人，也用最新版微信（包括安卓和 iOS最新版），被删除评论后再看回你这条朋友圈，原评论位置会提示“评论已被删除”，其他人看不到该提示。不过，删除评论后，对方不会收到消息提醒。
+
+中国驻休斯敦总领事馆全体馆员归国
+8月17日晚，中国驻休斯敦总领事馆全体馆员乘包机抵达北京，外交部在首都机场举行简短庄重迎
+        </a>
+      </p>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2020-08-17 22:12" pubdate>
+              2020-08-17
+            </time>
+          </div>
+        
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-category"></i>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/">默认分类</a>
+            
+              <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/%E4%BB%8A%E6%97%A5%E7%83%AD%E7%82%B9/">今日热点</a>
+            
+          </div>
+        
+        
+      </div>
+    </article>
+  </div>
+
+
+
+  <nav aria-label="navigation">
+    <span class="pagination" id="pagination">
+      <a class="extend prev" rel="prev" href="/page/4/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/6/"><i class="iconfont icon-arrowright"></i></a>
+    </span>
+  </nav>
+  
+  <script>
+    for (ele of document.getElementById("pagination").getElementsByTagName("a")) {
+      ele.href += '#board';
+    }
+  </script>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> & Lilys & <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+<!-- SCRIPTS -->
+
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":200})
+    NProgress.start()
+    document.addEventListener('DOMContentLoaded', function() {
+      window.NProgress && window.NProgress.inc();
+    })
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      var inputArea = document.querySelector("#local-search-input");
+      inputArea.onclick = function () {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+        this.onclick = null
+      }
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+
+</body>
+</html>
