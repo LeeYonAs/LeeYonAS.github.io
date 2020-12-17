@@ -4,77 +4,6 @@
   
   
   <entry>
-    <title></title>
-    <link href="/2020/12/17/KSWEB%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
-    <url>/2020/12/17/KSWEB%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
-    
-    <content type="html"><![CDATA[<h2 id="KSWEB用于Android平台的web开发工具"><a href="#KSWEB用于Android平台的web开发工具" class="headerlink" title="KSWEB用于Android平台的web开发工具"></a>KSWEB用于Android平台的web开发工具</h2><p>一个web服务器<br>一个PHP编程语言<br>一个数据库MySQL<br>……<br>1.建立数据库</p><hr><ul><li>选择到工具一栏——————辅助工具——————phpMyAdminA 点击后自动下载配置我这里选择Apache</li></ul><h2 id="2-端口设置"><a href="#2-端口设置" class="headerlink" title="2.端口设置"></a>2.端口设置</h2><ul><li>按下图所示，在Apache一栏下添加或修改端口 我以8080端口为网页地址<br>8000端口为数据库（我这前面的为手机局域网地址198.136.36.213是为了在电脑上访问localhost 127.0.0.1感觉不太方便）</li><li>开启服务</li></ul><p><img src="https://cdn.jsdelivr.net/gh/LeeYonAs/logli/usr/uploads/2020/08/1503195982.jpg" alt="配置.jpg"></p><h2 id="3-建立数据库"><a href="#3-建立数据库" class="headerlink" title="3.建立数据库"></a>3.建立数据库</h2><ul><li>手机点击8000端口的蓝色连接 在浏览器里打开即可 也可在电脑里打开 例如我的就是192.168.36.213:8000<br>以root登录 无密码  接着创建数据库   例如<strong>001</strong>（任意命名 建议写好记的）</li></ul><p>4.安装Typeche</p><ul><li>手机点击8080端口的蓝色连接 在浏览器里打开即可 也可在电脑里打开 例如我的就是192.168.36.213:8080</li><li>按照提示 填写信息即可</li></ul><hr><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ol><li>填写信息时要记住 后面可能会用到 尤其是密码</li><li>安装Typecho这一步时如果说数据库有误无法安装应该是数据库名称填写有误修改默认的typecho为<strong>001</strong><br>或者在三个选项中换一个 但要注意数据库名称</li><li>有些资源如图片音乐在手机上可以访问而电脑上不可访问 要看清楚当时上传的地址  是局域网地址还是手机的localhost    可在Typecho的后台——设置——基本里修改站点地址解决</li><li>网页看起来很简陋换主题也不行 应该也是在Typecho的后台修改站点地址来解决</li><li>实在不行 建议删除源码（htdocs）和数据库（ksweb/tool）重新安装</li></ol><hr><p><a href="https://wwe.lanzous.com/b00zq7d6d">下载地址</a><br><a href="https://wwe.lanzous.com/b00zq7d6d">https://wwe.lanzous.com/b00zq7d6d</a><br>密码:85h2<br>这种方法比较安全 但只可以在同一局域网内访问<br>如果我写的有错误 请评论指出<br>如果你有弄不好的 也欢迎留言</p>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="/2020/12/17/hello-world/"/>
-    <url>/2020/12/17/hello-world/</url>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>hi</title>
-    <link href="/2020/12/17/hi/"/>
-    <url>/2020/12/17/hi/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>1217</title>
-    <link href="/2020/12/17/1217/"/>
-    <url>/2020/12/17/1217/</url>
-    
-    <content type="html"><![CDATA[<p>ttttest😎<br><img src="http://leeyonas.github.io//post-images/1608183552783.jpg"></p><p><img src="http://leeyonas.github.io//post-images/1608183691652.jpg"></p>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>未命名文档</title>
-    <link href="/2020/10/19/2020-10-19-%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E6%A1%A3/"/>
-    <url>/2020/10/19/2020-10-19-%E6%9C%AA%E5%91%BD%E5%90%8D%E6%96%87%E6%A1%A3/</url>
-    
-    <content type="html"><![CDATA[<p><a href="https://cdn.jsdelivr.net/gh/LeeYonAs/logli/usr/uploads/2020/10/4218837249.pdf">《电路》第五版邱关源课后习题答案.pdf</a></p>]]></content>
-    
-    
-    <categories>
-      
-      <category>默认分类</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>恢复了</title>
     <link href="/2020/10/18/2020-10-18-%E6%81%A2%E5%A4%8D%E4%BA%86/"/>
     <url>/2020/10/18/2020-10-18-%E6%81%A2%E5%A4%8D%E4%BA%86/</url>
@@ -94,9 +23,9 @@
   
   
   <entry>
-    <title>国庆&amp;amp;中秋</title>
-    <link href="/2020/10/01/2020-10-01-%E5%9B%BD%E5%BA%86&amp;amp;%E4%B8%AD%E7%A7%8B/"/>
-    <url>/2020/10/01/2020-10-01-%E5%9B%BD%E5%BA%86&amp;amp;%E4%B8%AD%E7%A7%8B/</url>
+    <title>国庆&amp;中秋</title>
+    <link href="/2020/10/01/2020-10-01-%E5%9B%BD%E5%BA%86&amp;%E4%B8%AD%E7%A7%8B/"/>
+    <url>/2020/10/01/2020-10-01-%E5%9B%BD%E5%BA%86&amp;%E4%B8%AD%E7%A7%8B/</url>
     
     <content type="html"><![CDATA[<p>![77E04192-E6F7-46DB-A128-4CF066788601.jpeg][1]九月十六的时候学校说国庆只放一天上七天课 然后寒假提前 二十四号的时候通知该放八天假 不知所措 问了大姨 正好他们去我外婆家 正好一起 哈哈哈 昨晚到的大姨家 今早八点半开始出发 出城都一路通畅 甚至一条路上就三四辆车 然而九点半左走快到高速入口就开始堵车了 于是决定绕道而行 确实比高速好一点 十点钟左右堵车开始 十二点上的三桥 下午一点才硬是挤出收费站 一直堵着 两千米得开一个小时吧 一米一米的挪 快到两点的时候畅通了许多 在快速通道又堵了一会 具体什么情况我已经想不起来了 反正就是很堵非常堵 三点二十才下车  下车的时候整个人都有点飘 感觉踩的不是地 四点的时候吃了饭 玩了一会 五点十五的时候去了奶奶家 吃过晚饭 终于七点半到了家</p>]]></content>
     
@@ -110,19 +39,6 @@
       <category>天气</category>
       
     </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>国庆&amp;中秋</title>
-    <link href="/2020/10/01/10.1/"/>
-    <url>/2020/10/01/10.1/</url>
-    
-    <content type="html"><![CDATA[<p>🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚕🚕🚕🚙🚙🚌🚌🚐🚒🚚🚛🚜🏍🚔🚍<br>九月十六的时候学校说国庆只放一天上七天课 然后寒假提前<br>二十四号的时候通知该放八天假 不知所措<br>问了大姨 正好他们去我外婆家 正好一起 哈哈哈<br>昨晚到的大姨家 今早八点半开始出发 出城都一路通畅 甚至一条路上就三四辆车<br>然而九点半左走快到高速入口就开始堵车了<br>于是决定绕道而行 确实比高速好一点 十点钟左右堵车开始 十二点上的三桥<br>下午一点才硬是挤出收费站 一直堵着 两千米得开一个小时吧 一米一米的挪<br> 快到两点的时候畅通了许多 在快速通道又堵了一会 具体什么情况我已经想不起来了<br> 反正就是很堵非常堵 三点二十才下车<br> 下车的时候整个人都有点飘 感觉踩的不是地<br> 四点的时候吃了饭 玩了一会 五点十五的时候去了奶奶家 吃过晚饭 终于七点半到了家<br> <img src="https://cdn.jsdelivr.net/gh/LeeYonAs/logli/usr/uploads/2020/10/1300179372.jpeg"></p>]]></content>
-    
     
     
   </entry>
@@ -1433,38 +1349,6 @@
       
     </categories>
     
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>关于</title>
-    <link href="/2019/01/25/about/"/>
-    <url>/2019/01/25/about/</url>
-    
-    <content type="html"><![CDATA[<blockquote><p>欢迎来到我的小站呀，很高兴遇见你！🤝</p></blockquote><h2 id="🏠-关于本站"><a href="#🏠-关于本站" class="headerlink" title="🏠 关于本站"></a>🏠 关于本站</h2><h2 id="👨‍💻-博主是谁"><a href="#👨‍💻-博主是谁" class="headerlink" title="👨‍💻 博主是谁"></a>👨‍💻 博主是谁</h2><h2 id="⛹-兴趣爱好"><a href="#⛹-兴趣爱好" class="headerlink" title="⛹ 兴趣爱好"></a>⛹ 兴趣爱好</h2><h2 id="📬-联系我呀"><a href="#📬-联系我呀" class="headerlink" title="📬 联系我呀"></a>📬 联系我呀</h2>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Hello Gridea</title>
-    <link href="/2018/12/12/hello-gridea/"/>
-    <url>/2018/12/12/hello-gridea/</url>
-    
-    <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意… … </p><a id="more"></a><p><a href="https://github.com/getgridea/gridea">Github</a><br><a href="https://gridea.dev/">Gridea 主页</a><br><a href="http://fehey.com/">示例网站</a></p><h2 id="特性👇"><a href="#特性👇" class="headerlink" title="特性👇"></a>特性👇</h2><p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作  </p><p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片  </p><p>🏷️  你可以对文章进行标签分组  </p><p>📋  你可以自定义菜单，甚至可以创建外部链接菜单  </p><p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端  </p><p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台  </p><p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统  </p><p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong>  </p><p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力  </p><p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步  </p><p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p><p>未来，它一定会成为你离不开的伙伴</p><p>尽情发挥你的才华吧！</p><p>😘 Enjoy~</p>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>Gridea</tag>
-      
-    </tags>
     
   </entry>
   
