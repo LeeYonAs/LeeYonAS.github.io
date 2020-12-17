@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title></title>
+    <link href="/2020/12/17/KSWEB%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    <url>/2020/12/17/KSWEB%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
+    
+    <content type="html"><![CDATA[<h2 id="KSWEB用于Android平台的web开发工具"><a href="#KSWEB用于Android平台的web开发工具" class="headerlink" title="KSWEB用于Android平台的web开发工具"></a>KSWEB用于Android平台的web开发工具</h2><p>一个web服务器<br>一个PHP编程语言<br>一个数据库MySQL<br>……<br>1.建立数据库</p><hr><ul><li>选择到工具一栏——————辅助工具——————phpMyAdminA 点击后自动下载配置我这里选择Apache</li></ul><h2 id="2-端口设置"><a href="#2-端口设置" class="headerlink" title="2.端口设置"></a>2.端口设置</h2><ul><li>按下图所示，在Apache一栏下添加或修改端口 我以8080端口为网页地址<br>8000端口为数据库（我这前面的为手机局域网地址198.136.36.213是为了在电脑上访问localhost 127.0.0.1感觉不太方便）</li><li>开启服务</li></ul><p><img src="https://cdn.jsdelivr.net/gh/LeeYonAs/logli/usr/uploads/2020/08/1503195982.jpg" alt="配置.jpg"></p><h2 id="3-建立数据库"><a href="#3-建立数据库" class="headerlink" title="3.建立数据库"></a>3.建立数据库</h2><ul><li>手机点击8000端口的蓝色连接 在浏览器里打开即可 也可在电脑里打开 例如我的就是192.168.36.213:8000<br>以root登录 无密码  接着创建数据库   例如<strong>001</strong>（任意命名 建议写好记的）</li></ul><p>4.安装Typeche</p><ul><li>手机点击8080端口的蓝色连接 在浏览器里打开即可 也可在电脑里打开 例如我的就是192.168.36.213:8080</li><li>按照提示 填写信息即可</li></ul><hr><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ol><li>填写信息时要记住 后面可能会用到 尤其是密码</li><li>安装Typecho这一步时如果说数据库有误无法安装应该是数据库名称填写有误修改默认的typecho为<strong>001</strong><br>或者在三个选项中换一个 但要注意数据库名称</li><li>有些资源如图片音乐在手机上可以访问而电脑上不可访问 要看清楚当时上传的地址  是局域网地址还是手机的localhost    可在Typecho的后台——设置——基本里修改站点地址解决</li><li>网页看起来很简陋换主题也不行 应该也是在Typecho的后台修改站点地址来解决</li><li>实在不行 建议删除源码（htdocs）和数据库（ksweb/tool）重新安装</li></ol><hr><p><a href="https://wwe.lanzous.com/b00zq7d6d">下载地址</a><br><a href="https://wwe.lanzous.com/b00zq7d6d">https://wwe.lanzous.com/b00zq7d6d</a><br>密码:85h2<br>这种方法比较安全 但只可以在同一局域网内访问<br>如果我写的有错误 请评论指出<br>如果你有弄不好的 也欢迎留言</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Hello World</title>
     <link href="/2020/12/17/hello-world/"/>
     <url>/2020/12/17/hello-world/</url>

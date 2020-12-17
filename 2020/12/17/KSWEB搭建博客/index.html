@@ -22,6 +22,22 @@
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
 
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
 
 <!-- 主题依赖的图标库，不要自行修改 -->
 
@@ -47,7 +63,7 @@
 
 
 <body>
-  <header style="height: 100vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
@@ -141,22 +157,55 @@
 </nav>
 
     <div class="banner intro-2" id="background" parallax=true
-         style="background: url('https://acg.xydwz.cn/gqapi/gqapi.php') no-repeat center center;
+         style="background: url('/img/default.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="Welcome 欢迎访问">
+            <span class="h2" id="subtitle" title="">
               
             </span>
 
             
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2020-12-17 20:27" pubdate>
+        December 17, 2020 pm
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      523 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      7
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
           </div>
 
-          
-            <div class="scroll-down-bar">
-              <i class="iconfont icon-arrowdown"></i>
-            </div>
           
         </div>
       </div>
@@ -165,282 +214,96 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5" id="board"
-          style=margin-top:0>
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
+      
 
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2020/12/17/KSWEB%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"></a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2020/12/17/KSWEB%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
-          
-          
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none"></h1>
             
-          
-          KSWEB用于Android平台的web开发工具一个web服务器一个PHP编程语言一个数据库MySQL……1.建立数据库
+            <div class="markdown-body">
+              <h2 id="KSWEB用于Android平台的web开发工具"><a href="#KSWEB用于Android平台的web开发工具" class="headerlink" title="KSWEB用于Android平台的web开发工具"></a>KSWEB用于Android平台的web开发工具</h2><p>一个web服务器<br>一个PHP编程语言<br>一个数据库MySQL<br>……<br>1.建立数据库</p>
+<hr>
+<ul>
+<li>选择到工具一栏——————辅助工具——————phpMyAdminA 点击后自动下载配置我这里选择Apache</li>
+</ul>
+<h2 id="2-端口设置"><a href="#2-端口设置" class="headerlink" title="2.端口设置"></a>2.端口设置</h2><ul>
+<li>按下图所示，在Apache一栏下添加或修改端口 我以8080端口为网页地址<br>8000端口为数据库（我这前面的为手机局域网地址198.136.36.213是为了在电脑上访问localhost 127.0.0.1感觉不太方便）</li>
+<li>开启服务</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/LeeYonAs/logli/usr/uploads/2020/08/1503195982.jpg" srcset="/img/loading.gif" alt="配置.jpg"></p>
+<h2 id="3-建立数据库"><a href="#3-建立数据库" class="headerlink" title="3.建立数据库"></a>3.建立数据库</h2><ul>
+<li>手机点击8000端口的蓝色连接 在浏览器里打开即可 也可在电脑里打开 例如我的就是192.168.36.213:8000<br>以root登录 无密码  接着创建数据库   例如<strong>001</strong>（任意命名 建议写好记的）</li>
+</ul>
+<p>4.安装Typeche</p>
+<ul>
+<li>手机点击8080端口的蓝色连接 在浏览器里打开即可 也可在电脑里打开 例如我的就是192.168.36.213:8080</li>
+<li>按照提示 填写信息即可</li>
+</ul>
+<hr>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ol>
+<li>填写信息时要记住 后面可能会用到 尤其是密码</li>
+<li>安装Typecho这一步时如果说数据库有误无法安装应该是数据库名称填写有误修改默认的typecho为<strong>001</strong><br>或者在三个选项中换一个 但要注意数据库名称</li>
+<li>有些资源如图片音乐在手机上可以访问而电脑上不可访问 要看清楚当时上传的地址  是局域网地址还是手机的localhost    可在Typecho的后台——设置——基本里修改站点地址解决</li>
+<li>网页看起来很简陋换主题也不行 应该也是在Typecho的后台修改站点地址来解决</li>
+<li>实在不行 建议删除源码（htdocs）和数据库（ksweb/tool）重新安装</li>
+</ol>
+<hr>
+<p><a target="_blank" rel="noopener" href="https://wwe.lanzous.com/b00zq7d6d">下载地址</a><br><a target="_blank" rel="noopener" href="https://wwe.lanzous.com/b00zq7d6d">https://wwe.lanzous.com/b00zq7d6d</a><br>密码:85h2<br>这种方法比较安全 但只可以在同一局域网内访问<br>如果我写的有错误 请评论指出<br>如果你有弄不好的 也欢迎留言</p>
 
-
-选择到工具一栏——————辅助工具——————phpMyAdminA 点击后自动下载配置我这里选择Apache
-
-2.端口设置
-按下图所示，在Apache一栏下添加或修改端口 我以8080端口为网页地址8000端口为数据库（我这前面的为手机局域网地址198.136.36.2
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2020-12-17 20:27" pubdate>
-              2020-12-17
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2020/12/17/hello-world/">Hello World</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2020/12/17/hello-world/">
-          
-          
-            
-          
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2020-12-17 18:44" pubdate>
-              2020-12-17
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2020/12/17/hi/">hi</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2020/12/17/hi/">
-          
-          
-            
-          
-          
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2020-12-17 16:43" pubdate>
-              2020-12-17
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2020/12/17/1217/">1217</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2020/12/17/1217/">
-          
-          
-            
-          
-          ttttest😎
-
-
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2020-12-17 13:33" pubdate>
-              2020-12-17
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2020/10/01/10.1/">国庆&amp;中秋</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2020/10/01/10.1/">
-          
-          
-            
-          
-          🚗🚗🚗🚗🚗🚗🚗🚗🚗🚗🚕🚕🚕🚙🚙🚌🚌🚐🚒🚚🚛🚜🏍🚔🚍九月十六的时候学校说国庆只放一天上七天课 然后寒假提前二十四号的时候通知该放八天假 不知所措问了大姨 正好他们去我外婆家 正好一起 哈哈哈昨晚到的大姨家 今早八点半开始出发 出城都一路通畅 甚至一条路上就三四辆车然而九点半左走快到高速入口就开始堵车了于是决定绕道而行 确实比高速好一点 十点钟左右堵车
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2020-10-01 21:24" pubdate>
-              2020-10-01
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2019/01/25/about/">关于</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2019/01/25/about/">
-          
-          
-            
-          
-          
-欢迎来到我的小站呀，很高兴遇见你！🤝
-
-🏠 关于本站👨‍💻 博主是谁⛹ 兴趣爱好📬 联系我呀
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2019-01-25 19:09" pubdate>
-              2019-01-25
-            </time>
-          </div>
-        
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2018/12/12/hello-gridea/">Hello Gridea</a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/2018/12/12/hello-gridea/">
-          
-          
-            
-          
-          👏  欢迎使用 Gridea ！✍️  Gridea 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意… … 
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2018-12-12 00:00" pubdate>
-              2018-12-12
-            </time>
-          </div>
-        
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/Gridea/">Gridea</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-
-
-
-
-              </div>
             </div>
-          </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+              
+                <div class="post-prevnext row">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2020/12/17/hello-world/">
+                        <span class="hidden-mobile">Hello World</span>
+                        <span class="visible-mobile">Next</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
         </div>
       </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;TOC</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
     
 
     
@@ -523,9 +386,15 @@ Quick
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
 
 
 
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
 
 
 
